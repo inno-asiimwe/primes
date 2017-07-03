@@ -1,5 +1,19 @@
 def list_primes(number):
-    pass
+    primes = []
+    non_primes = []
+    if is_greater_than_two(number):
+        for integer in range(2, number + 1):
+            if integer not in non_primes:
+                primes.append(integer)
+
+                for i in range(integer * integer, number + 1, integer):
+                    non_primes.append(i)
+    else:
+        raise ValueError("number should be greater than or equal to two")
+
+    return primes
+            
+        
 
 def is_int(number):
     """The method returns True for Integers and false for everything else"""
