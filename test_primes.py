@@ -2,6 +2,7 @@ import unittest
 from primes import list_primes, is_int, is_greater_than_two
 
 class PrimeNumberTest(unittest.TestCase):
+    """Test for the list_primes function"""
     
     def setUp(self):
         self.primes = list_primes(100)

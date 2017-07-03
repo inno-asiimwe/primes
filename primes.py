@@ -1,4 +1,5 @@
 def list_primes(number):
+    """ Function to generate prime numbers from 0 to a given number"""
     primes = []
     non_primes = []
     if is_greater_than_two(number):
