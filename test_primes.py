@@ -15,7 +15,7 @@ class PrimeNumberTest(unittest.TestCase):
     def test_is_int_non_interger(self):
         """Testing whether is_int returns false with non Interger an interger"""
         test_value = is_int('two')
-        self.assertFalse(b)
+        self.assertFalse(test_value)
 
     def test_input_greater_than_2(self):
         """Method tests whether is_greater_than_two returns True with 2 or a number greater than 2"""
