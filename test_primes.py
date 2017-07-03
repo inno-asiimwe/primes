@@ -27,7 +27,7 @@ class PrimeNumberTest(unittest.TestCase):
 
     def test_non_interger_input(self):
         """method tests whether is_greater_than_two raise a type Error with a non numeric value"""
-        self.assertRaises(TypeError, is_greater_than_two('four'))
+        self.assertRaises(TypeError, is_greater_than_two,'four')
 
     def test_list_primes_for_prime(self):
         """Method tests if a given prime is in a list of prime numbers returned by list_primes"""
