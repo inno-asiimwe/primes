@@ -9,4 +9,12 @@ def is_int(number):
         return False
 
 def is_greater_than_two(number):
-    pass
+    """Function returns true when the  given number is greater or equal two, 
+    false numbers less than two, and raises type error for an interger"""
+    if is_int(number):
+        if number >= 2:
+            return True
+        else:
+            return False
+    else:
+        raise TypeError("input should be an integer")
